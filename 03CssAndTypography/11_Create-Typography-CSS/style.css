@@ -1,0 +1,61 @@
+html{
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body{
+    margin: 0em 3em;
+}
+
+h1, h2, h3, h4, h5, h5{
+    font-family: Georgia, serif;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th{
+    border: solid 0.1em rgb(195, 193, 193);
+    background-color: rgb(209, 209, 209);
+    padding: 0.3em;
+}
+
+tr:nth-child(2n-1){
+    background-color: rgb(245, 243, 243);
+}
+
+td{
+    border: solid 0.1em lightgrey;
+    padding: 0.3em;
+}
+
+blockquote{
+    border-left: 0.3em solid rgb(221,221,221);  
+    font-style: italic;
+    padding: 0.5em 0em 1em 2em;
+}
+
+hr{
+    border-top: 0.1em solid rgb(221,221,221);    
+}
+
+p.author{
+    text-align: right;
+}
+
+article>ul {
+    list-style: square;
+}
+
+article>ul>ul {
+    list-style: disc;
+}
+
+article>ul>ul>ul {
+    list-style: circle;
+}
