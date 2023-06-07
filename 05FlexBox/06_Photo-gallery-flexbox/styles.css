@@ -1,0 +1,30 @@
+body {
+    background-color: lightgray;
+    margin: 6em;
+    font-size: 16px;
+}
+
+body,
+ul,
+li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+ul {
+    justify-content: space-between;
+    max-width: 78em;
+}
+
+li {
+    padding: 2em 1em;
+    margin: 0.9em;
+    border: 1em solid black;
+    box-shadow: 0 0 2em rgb(0, 0, 0, 0.4);
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 0;
+}

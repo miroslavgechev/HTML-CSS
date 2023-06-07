@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+
+.container,
+.week,
+.notes {
+    display: flex;
+}
+
+.container {
+    max-width: 65vw;
+    border: 1px black solid;
+    margin: 4em auto;
+    text-align: center;
+    border: 1px black solid;
+}
+
+.week {
+    flex-wrap: wrap;
+    align-items: center;
+    flex-basis: auto;
+}
+
+.notes {
+    flex-direction: column;
+    flex-basis: 30%;
+}
+
+span {
+    border: 1px black solid;
+    flex-grow: 1;
+    padding: 1em 1em 5em;
+}
+
+.title {
+    flex-basis: 100%;
+}
+
+.workday {
+    flex-basis: 14%;
+}
