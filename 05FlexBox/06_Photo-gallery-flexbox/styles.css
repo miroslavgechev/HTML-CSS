@@ -15,16 +15,17 @@ li {
 
 ul {
     justify-content: space-between;
-    max-width: 78em;
+    max-width: 75em;
 }
 
 li {
     padding: 2em 1em;
-    margin: 0.9em;
+    min-height: 25em;
     border: 1em solid black;
-    box-shadow: 0 0 2em rgb(0, 0, 0, 0.4);
+    border-radius: 0.1em;
+    box-shadow:
+        0 0 0.5em 0 rgb(0, 0, 0, 0.4) inset,
+        0 0 1em 0.4em rgb(0, 0, 0, 0.4);
     background-color: whitesmoke;
     align-items: center;
-    justify-content: center;
-    flex: 0 0 0;
 }

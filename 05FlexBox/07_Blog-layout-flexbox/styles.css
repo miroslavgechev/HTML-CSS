@@ -31,8 +31,7 @@ aside {
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-family: Georgia, serif;
     font-weight: normal;
     margin-bottom: 0.5em;
@@ -89,14 +88,14 @@ a {
 
 ul {
     list-style: square;
-    -left: 2em;
+    left: 2em;
 }
 
 .page {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items: flex-start;
 }
 
 .float-right {

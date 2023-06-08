@@ -19,8 +19,13 @@ ul {
     gap: 3em;
 }
 
-li:last-child {
-    padding-right: 1em;
+p {
+    font-size: 0.9em;
+}
+
+a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
 }
 
 header h1 {
@@ -28,11 +33,6 @@ header h1 {
     text-transform: uppercase;
     margin: 2rem 0;
     padding: 0;
-}
-
-a {
-    color: rgb(0, 153, 0);
-    text-decoration: none;
 }
 
 main h1 {
@@ -43,6 +43,8 @@ main h1 {
     padding: 0;
 }
 
-p {
-    font-size: 0.9em;
+li:last-child {
+    padding-right: 1em;
 }
+
+
