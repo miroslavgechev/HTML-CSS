@@ -1,42 +1,66 @@
-body {
-    background: rgb(238, 238, 238);
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    font: 1em/1.2 Georgia, serif;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(238, 238, 238);
+    font: 1em/1.2 Helvetica, sans-serif;
 }
 
 .card {
     background: rgb(255, 255, 255);
-    position: relative;
-    min-height: 50vh;
-    max-width: 30vw;
-    margin: auto
+    width: 20%;
+    border-radius: 0.5em;
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.4);
+
 }
 
-.card:nth-child(1) {
-    content:'';
+.card .media {
     position: relative;
+    overflow: hidden;
+    border-radius: 0.5em 0.5em 0 0;
 }
 
-.card:nth-child(2) {
+.card .media:after {
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+}
+
+.card .media img {
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 
-img {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20vw;
-    height: auto;
+.card .content {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
 }
 
-.card a {
-    background: (0, 153, 0)
+.card .content h3 {
+    font: 1em/1.2 Georgia, serif;
+    font-weight: bold;
+}
+
+
+.card .content a {
+    background: rgb(0, 153, 0);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    text-decoration: none;
+    align-self: flex-end;
 }
