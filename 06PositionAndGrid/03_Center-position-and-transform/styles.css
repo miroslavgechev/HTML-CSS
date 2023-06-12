@@ -17,14 +17,13 @@ body {
     background: rgb(255, 255, 255);
     width: 20%;
     border-radius: 0.5em;
+    overflow: hidden;
     box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.4);
-
 }
 
 .card .media {
     position: relative;
     overflow: hidden;
-    border-radius: 0.5em 0.5em 0 0;
 }
 
 .card .media:after {

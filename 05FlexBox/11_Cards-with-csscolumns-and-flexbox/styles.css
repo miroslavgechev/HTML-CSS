@@ -1,3 +1,69 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Helvetica, sanf-serif
+}
+
+body {
     background-color: rgb(238, 238, 238);
+    width: 40vw;
+    margin: auto;
+}
+
+h2 {
+    font-family: Times, serif;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.card {
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin: 1em;
+    border-radius: 0.5em;
+    overflow: hidden;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin: 0;
+    padding: 1em 1em 0;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.card>section>p {
+    margin: 0;
+    padding: 0 1em 2em;
+}
+
+.card>footer>p {
+    margin: 0;
+    padding: 2em 1em 1em;
+    border-top: 1px solid rgb(204, 204, 204);
+}
+
+.cards-layout.masonry {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    align-items: start;
+    gap: 1em;
+}
+
+.cards-layout.flex {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.flex section {
+    flex: 1 1 auto;
+}
+
+.flex footer {
+    flex: 0 0 auto;
 }
