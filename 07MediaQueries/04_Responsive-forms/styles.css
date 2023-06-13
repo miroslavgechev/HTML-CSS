@@ -1,0 +1,115 @@
+@import url('https://use.fontawesome.com/releases/v6.4.0/css/all.css');
+
+html {
+    font: 14px/1.5 Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+form {
+    margin-top: 2em;
+    width: 27em;
+    position: relative;
+
+}
+
+fieldset {
+    background: rgb(248, 248, 248);
+    padding: 2em;
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 0.4em;
+    box-shadow: 0 0 0.5em 0 rgba(92, 92, 92, 0.5);
+
+}
+
+fieldset legend {
+    font-weight: bold;
+    text-indent: 1em;
+    line-height: 2em;
+    width: 30%;
+    margin: 0;
+    position: absolute;
+    top: -1em;
+    left: 2px;
+    background: rgb(248, 248, 248);
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 0.4em;
+    box-shadow: 0 0 0.5em 0 rgba(92, 92, 92, 0.5);
+}
+
+p {
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    display: block;
+    width: 4em;
+    font-weight: bolder;
+}
+
+input {
+    flex: 1 0 auto;
+    height: 2em;
+    border-radius: 0.4em;
+    border: 1px solid rgb(215, 215, 215);
+    text-indent: 2em;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+    width: 5em;
+    padding: 0.5em;
+    border: 1px solid rgb(45, 45, 45);
+    background: rgb(45, 45, 45);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.4em;
+}
+
+input:focus {
+    background-color: ivory;
+}
+
+.fa-user,
+.fa-key {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    left: 9em;
+}
+
+@media (width < 500px) {
+    p {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 0;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .fa-user,
+    .fa-key {
+        position: relative;
+        color: rgb(0, 0, 0);
+        left: 1em;
+        top: -1.5em;
+    }
+
+    form {
+        min-width: 17em;
+    }
+}

@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    font: 16px/1.5 Helvetica, sans-serif;
+    max-width: 70vw;
+    margin: auto;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    margin: 4em auto;
+}
+
+h1,
+h2 {
+    font: 1em/1.2 Georgia, serif;
+    font-weight: normal;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+main {
+    flex: 1 1 50%;
+}
+
+p {
+    margin: 0em 0 2em;
+}
+
+img {
+    background-color: rgb(255, 255, 255);
+    border: 0.2em solid black;
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.25);
+    padding: 0.5em;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    color: rgba(0, 0, 0, 0.5);
+    font-style: italic;
+    width: 50%;
+}
+
+section>p:last-child {
+    margin-bottom: 3em;
+}
+
+blockquote>p:last-child {
+    padding-top: 0.5em;
+    text-align: right;
+}
+
+.main-ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    margin: 0;
+    padding-right: 1em;
+}
+
+.main-header {
+    border-bottom: 0.2em solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header h1 {
+    font-size: 2.8em;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    display: block;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 1em 1.5em;
+}
+
+.float-left {
+    float: left;
+    margin: 0 1.5em 1em 0;
+}
+
+blockquote.quote-right {
+    float: right;
+    border-left: 0.3em solid lightgray;
+    padding: 0 0 2em 2em;
+    text-align: left;
+    margin: 0 0 2em;
+
+}
+
+@media (width <=500px) {
+
+    html {
+        font-size: 12px;
+        max-width: 85vw;
+    }
+
+    .float-right,
+    .float-left {
+        float: none;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+
+    blockquote {
+        width: 90%;
+    }
+
+    blockquote.quote-right {
+        float: none;
+        text-align: left;
+        padding-bottom: 1em;
+        margin: 0 0 2em 2em;
+    }
+}
+
+
+@media (width > 500px) and (width <= 600){
+
+    html {
+        font-size: 14px;
+        max-width: 90vw;
+    }
+
+    .float-right,
+    .float-left {
+        float: none;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+
+    blockquote {
+        width: 90%;
+    }
+
+    blockquote.quote-right {
+        float: none;
+        text-align: left;
+        padding-bottom: 1em;
+        margin: 0 0 2em 2em;
+    }
+}
+
+@media (width > 600px) and (width <= 800) {
+
+    html {
+        font-size: 16px;
+        max-width: 90vw;
+    }
+}
+
+@media (width > 800px) and (width <= 1300) {
+
+    html {
+        font-size: 18px;
+        max-width: 90vw;
+    }
+}
+
+@media (width > 1300px) and (width <= 1800){
+    
+    html {
+        font-size: 21px;
+        max-width: 70vw;
+    }
+}
+
+@media (width > 1800px) {
+    
+    html {
+        font-size: 23px;
+        max-width: 70vw;
+    }
+}
