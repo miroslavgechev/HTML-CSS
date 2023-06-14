@@ -1,0 +1,11 @@
+.intro-header-button{
+    padding: 0.5em 1em;
+    border: px solid black;
+    border-radius: 0.2em;
+    background: transparent;
+}
+
+.intro-header-button:hover{
+    background: black;
+    color:white;
+}
