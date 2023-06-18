@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 2em 6em;
+}
+
+nav ul {
+    display: flex;
+    gap: 3em;
+    padding: 0;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 2em;
+    color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+.login-btn {
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+}
+
+.signup-btn {
+    padding: 1em 2em;
+    background-color: rgb(173, 226, 223);
+    border-radius: 1em;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+}
+
