@@ -1,0 +1,25 @@
+.images {
+    background-size: cover;
+    background-position: center -15em;
+    background-repeat: no-repeat;
+}
+
+.images{
+    object-fit: cover;
+}
+
+.images{
+    aspect-ratio: 1;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.container{
+    overflow: hidden;
+}
+
+footer {
+    margin-top: auto;
+}
