@@ -1,6 +1,7 @@
 @import url(./reset.css);
 @import url(./typography.css);
 @import url(./header.css);
+@import url(./footer.css);
 
 @import url('https://use.fontawesome.com/releases/v6.4.0/css/all.css');
 
@@ -26,7 +27,6 @@ footer {
     display: flex;
     gap: 1em;
 }
-
 
 .welcome-btn {
     background-color: rgb(0, 0, 0);
@@ -71,7 +71,7 @@ footer {
     padding: 0 10em;
 }
 
-.img-svg {
+.why-us .img-svg {
     background-image: url(../images/group\ 1277.svg);
     background-size: contain;
     background-position: center;
@@ -89,16 +89,15 @@ footer {
     padding: 1em 0 0;
 }
 
-.content-card>p:first-child {
+.why-us .content-card>p:first-child {
     font-weight: bold;
     padding-bottom: 0.5em;
 }
 
-.content>a {
+.why-us .content>a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.9);
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    ;
 }
 
 .pricing-plans-header {
@@ -109,7 +108,6 @@ footer {
     align-content: stretch;
     gap: 1em;
     background-color: rgb(243, 245, 250);
-
 }
 
 .pricing-plans-header h4 {
@@ -123,51 +121,27 @@ footer {
     background-color: rgb(243, 245, 250);
 }
 
-.card-pricing-plan-expand a{
-    background-color: black;
-    color: white;
-    align-self: flex-end;
-    display: block;
-    margin: 0 2em;
-}
-
-.plans {
+.pricing-plans .plans {
     display: flex;
-    gap: 2em;
+    gap: 0em;
+    flex: 1 0 65%;
     border: 1px solid lightgray;
     background-color: rgb(255, 255, 255);
-    padding: 2em;
+    padding: 2em 1em;
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
+
 }
 
-.card-pricing-plan {
-    background-color: rgb(255, 255, 255);
-}
-
-.card-pricing-plan .pricing-content {
-    border-bottom: 1px solid lightgray;
+.pricing-plans .plans div:last-child {
+    border-right: none;
 }
 
 .pricing-plans h5 {
     text-align: center;
 }
 
-.card-pricing-plan-expand{
-    background: rgb(173, 226, 223);;
-}
-
-.card-pricing-plan-expand h5{
-    padding-top: 2em;
-}
-
-.card-pricing-plan .title span {
-    font-size: 3em;
-    font-weight: 600;
-}
-
 .pricing-plans ul {
-    display: block;
     list-style-type: none;
     padding-top: 2em;
 }
@@ -175,23 +149,60 @@ footer {
 .pricing-plans ul li {
     font-size: 10px;
     font-weight: normal;
+    padding: 2px;
+}
+
+.card-pricing-plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-right: 1px solid lightgray;
+    padding: 0 1.5em;
+}
+
+.card-pricing-plan .title span {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.card-pricing-plan .pricing-content {
+    border-bottom: 1px solid lightgray;
+}
+
+.card-pricing-plan-expand a {
+    background-color: black;
+    color: white;
+    align-self: stretch;
+    margin: 0 2em
+}
+
+.card-pricing-plan-expand {
+    background: rgb(173, 226, 223);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em 0;
 }
 
 
-.content-expand{
+.card-pricing-plan-expand .content-expand {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-
     padding-left: 2em;
     border: 1px solid lightgray;
-    background-color: rgb(173, 226, 223);;
+    background-color: rgb(173, 226, 223);
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
     border-left: none;
     border-bottom: none;
 }
 
+.card-pricing-plan-expand .content-expand ul {
+    padding-top: 0;
+}
 
 .btn-get {
     display: block;
@@ -212,35 +223,18 @@ footer {
     gap: 0;
 }
 
-.welcome-buttons{
+.welcome-buttons {
     margin-top: 3em;
 }
 
-footer{
-    display: flex;
-    justify-content: space-between;
-    padding: 1em 2em;
-}
-
-footer .socials{
-    display: flex;
-    gap: 1em;
-}
-
-footer .socials a{
-    text-decoration: none;
-    color: black;
-}
-
-.bold{
+.bold {
     font-weight: 500;
     font-size: 1.3em;
 }
 
-.divider{
+.divider {
     display: block;
     content: '';
     height: 4em;
     background-color: rgb(243, 245, 250);
 }
-

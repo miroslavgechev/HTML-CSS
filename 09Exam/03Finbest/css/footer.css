@@ -1,0 +1,15 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+footer .socials{
+    display: flex;
+    gap: 1em;
+}
+
+footer .socials a{
+    text-decoration: none;
+    color: black;
+}
